@@ -64,6 +64,8 @@ Go to Relatify-> Settings Page, select template you like.
 4. Templates 3
 5. Templates 4
 6. Templates 5
+7. Templates 6
+8. Templates 7
 
 
 
