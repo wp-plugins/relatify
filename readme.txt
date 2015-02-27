@@ -4,7 +4,7 @@ Donate link: http://relatify.co/
 Tags: related content, wordpress releated, related posts, more like this, related contents, nrelate, related widget, yarpp, simple related
 Requires at least: 3.8.1
 Tested up to: 4.1.1
-Stable tag: 0.9.0
+Stable tag: 0.9.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -74,14 +74,19 @@ Go to Relatify-> Settings Page, select template you like.
 
 == Changelog ==
 
+= 0.9.1 - 2015-02-27 =
+* Resolved Ticket# [1](https://wordpress.org/support/topic/theme-1-not-show-preview)
+* Bug fixed in theme #6 & #7.
+* Widget bug fixed.
+
 = 0.9.0 - 2015-02-25 =
 * Initial submission
 
 
 == Upgrade Notice ==
 
-= 0.9.0 =
-* Initial submission
+= 0.9.1 =
+* 4 bug fix, must update.
 
 
 == Donation ==

@@ -9,23 +9,23 @@
             <%= items.title %>
         </div>
         <div class="content-list-wrapper">
-            <% _.each(items.posts,function(item,key,list){ %>
-            <div class="single_rel_wrap">
-                <div class="single_relatified_item">
-                    <a href="<%= item.permalink %>">
-                        <% if(item.image != "") { %>
+            <ul>
+                <% _.each(items.posts,function(item,key,list){ %>
+                <li>
+                    <% if(item.image != "") { %>
+                    <div class="rel_thumb">
                         <img src="<%= item.image %>" />
-                        <% } %>
-                        <div class="single_relatified_post_title">
-                            <p><%= item.post_title %></p>
-                            <div class="single_relatified_excerpt">
-                                <%= item.post_content.substr(0, 100).replace( /<.*?>/g, '' ) %> ...
-                            </div>
+                    </div>
+                    <% } %>
+                    <div class="rel_content">
+                        <p><b><a href="<%= item.permalink %>"><%= item.post_title %></a></b></p>
+                        <div class="rel_excerpt">
+                            <%= item.post_content.substr(0, 250).replace( /<.*?>/g, '' ) %> ...
                         </div>
-                    </a>
-                </div>
-            </div>
-            <% }); %>
+                    </div>
+                </li>
+                <% }); %>
+            </ul>
         </div>
     </div>
 </script>
@@ -38,93 +38,25 @@
         margin: 20px 0 35px;
         overflow: hidden;
     }
-    .single_rel_wrap {
+    .rel_thumb{
+        width: 25%;
         float: left;
-        width: 45%;
-        margin: 0 2% 20px;
-
     }
-
-    .single_relatified_item img {
-        width: 100%;
-        border-radius: 0;
-        -webkit-transition: all 1s ease; /* Safari and Chrome */
-        -moz-transition: all 1s ease; /* Firefox */
-        -ms-transition: all 1s ease; /* IE 9 */
-        -o-transition: all 1s ease; /* Opera */
-        transition: all 1s ease;
+    .rel_content{
+        float: right;
+        width: 72%;
     }
-
-    .single_relatified_item:hover img {
-        -webkit-transform:scale(1.25) rotate(-20deg); /* Safari and Chrome */
-        -moz-transform:scale(1.25) rotate(-20deg); /* Firefox */
-        -ms-transform:scale(1.25) rotate(-20deg); /* IE 9 */
-        -o-transform:scale(1.25) rotate(-20deg); /* Opera */
-        transform:scale(1.25) rotate(-20deg);
-    }
-
-    .single_relatified_item a{
-        display: block;
-    }
-
-    .single_relatified_item{
-        position: relative;
-        height: 285px;
+    .content-list-wrapper li{
         overflow: hidden;
+        margin: 0 0 15px;
+        padding: 0;
     }
-
-    .single_relatified_post_title {
-        padding: 3px;
-        position: absolute;
-        bottom: -60px;
-        background-color:rgba(63,63,63,0.7);
-        height: 105px;
-        width: 100%;
-        box-sizing: border-box;
-        color: #fff;
+    .content-list-wrapper ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
     }
-
-    .full_box {
-    }
-
-    .single_relatified_post_title p {
-        color: #fff;
-        font-weight: bold;
-        font-size: 12px !important;
-        line-height: 1.4;
-        margin-bottom: 10px !important;
-        padding: 5px;
-        text-decoration: underline;
-    }
-
-    .single_relatified_post_title .single_relatified_excerpt {
-        color: #fff;
-        font-weight: bold;
-        font-size: 12px !important;
-        line-height: 1.4;
-        margin-bottom: 0 !important;
-        padding: 5px;
-    }
-
-    .related-content-title {
+    .content-list-wrapper p{
         margin-bottom: 10px;
     }
 </style>
-
-<script type="text/javascript">
-    jQuery(function($){
-
-        $(document).on('mouseenter', '.single_relatified_item', function() {
-            $(this).find('.single_relatified_post_title').animate({
-                bottom: '0'
-            }, 300);
-        });
-
-        $(document).on('mouseleave', '.single_relatified_item', function() {
-            $(this).find('.single_relatified_post_title').animate({
-                bottom: '-60px'
-            }, 300);
-        });
-
-    });
-</script>

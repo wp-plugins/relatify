@@ -1,18 +1,18 @@
 <?php
 
 /**
- * Adds SRC_Widget widget.
+ * Adds Relatify_Widget widget.
  */
-class SRC_Widget extends WP_Widget {
+class Relatify_Widget extends WP_Widget {
 
     /**
      * Register widget with WordPress.
      */
     function __construct() {
         parent::__construct(
-            'src_widget', // Base ID
-            __( 'Related Content Widget', 'src' ), // Name
-            array( 'description' => __( 'A widget to show related contents', 'src' ), ) // Args
+            'relatify_widget', // Base ID
+            __( 'Relatify Widget', 'relatify' ), // Name
+            array( 'description' => __( 'A widget to show related contents', 'relatify' ), ) // Args
         );
     }
 
@@ -42,8 +42,8 @@ class SRC_Widget extends WP_Widget {
      * @param array $instance Previously saved values from database.
      */
     public function form( $instance ) {
-        $title = ! empty( $instance['title'] ) ? $instance['title'] : __( 'Widget title', 'src' );
-        $number = ! empty( $instance['number'] ) ? $instance['number'] : __( 'No of posts', 'src' );
+        $title = ! empty( $instance['title'] ) ? $instance['title'] : __( 'Widget title', 'relatify' );
+        $number = ! empty( $instance['number'] ) ? $instance['number'] : __( 'No of posts', 'relatify' );
         ?>
         <p>
             <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label>
@@ -77,7 +77,7 @@ class SRC_Widget extends WP_Widget {
 } // class SRC_Widget
 
 // register SRC_Widget widget
-function register_src_widget() {
-    register_widget( 'SRC_Widget' );
+function register_relatify_widget() {
+    register_widget( 'Relatify_Widget' );
 }
-add_action( 'widgets_init', 'register_src_widget' );
+add_action( 'widgets_init', 'register_relatify_widget' );
