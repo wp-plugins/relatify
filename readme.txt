@@ -1,14 +1,14 @@
-=== Relatify ===
+=== Relatify - Ultimate Related Posts ===
 Contributors: Asif2BD
 Donate link: http://relatify.co/
-Tags: related content, wordpress releated, more like this, related contents, nrelate, 
+Tags: related content, wordpress releated, related posts, more like this, related contents, nrelate, related widget, yarpp, simple related
 Requires at least: 3.8.1
 Tested up to: 4.1.1
 Stable tag: 0.9.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-The best & smartest releated contents plugin for WordPress. Days of old design is over.
+The best & smartest releated contents/posts plugin for WordPress. Days of old design is over.
 
 == Description ==
 
@@ -18,13 +18,16 @@ The best & smartest releated contents plugin for WordPress. Days of old design i
 
 **Features:**
 
-*  Best smart related contents
+*  Smartest related results
 *  Modern design
 *  Full control how it looks in your site
 *  Ability to use Featured Image, or image from custom field or first image from the post.
-*  Ability to control image size.
+*  Ability to control image size
 *  Theming capability
 *  Premium design.
+*  Tons of free design and more coming everyweek
+*  Prompt support
+*  Smart Mouse Hover effects available in design.
 
 
 
