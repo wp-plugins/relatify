@@ -1,4 +1,4 @@
-=== Relatify - Ultimate Related Posts ===
+=== Relatify - Related Posts ===
 Contributors: Asif2BD
 Donate link: http://relatify.co/
 Tags: related content, wordpress releated, related posts, more like this, related contents, nrelate, related widget, yarpp, simple related
