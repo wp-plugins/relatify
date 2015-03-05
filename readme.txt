@@ -1,14 +1,14 @@
-=== Relatify - Related Posts ===
-Contributors: Asif2BD
+=== Related Posts By Relatify ===
+Contributors: Asif2BD, tapan29bd, rupok
 Donate link: http://relatify.co/
 Tags: related content, wordpress releated, related posts, more like this, related contents, nrelate, related widget, yarpp, simple related
 Requires at least: 3.8.1
 Tested up to: 4.1.1
-Stable tag: 0.9.1
+Stable tag: 0.9.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-The best & smartest releated contents/posts plugin for WordPress. Days of old design is over.
+The best & smartest related contents/posts plugin for WordPress. The only Related Contents Framework in the industry.
 
 == Description ==
 
@@ -25,10 +25,11 @@ The best & smartest releated contents/posts plugin for WordPress. Days of old de
 *  Ability to control image size
 *  Theming capability
 *  Premium design.
-*  Tons of free design and more coming everyweek
+*  Tons of free design and more coming every week
 *  Prompt support
-*  Smart Mouse Hover effects available in design.
-
+*  Smart Mouse Hover effects available in design
+*   **New** Dynamic image size control
+*   **New** Templates Update.
 
 
 == Installation ==
@@ -74,6 +75,12 @@ Go to Relatify-> Settings Page, select template you like.
 
 == Changelog ==
 
+= 0.9.2 - 2015-03-05 =
+* Dynamic Image size
+* Templates Update
+* Featured Image size bug fix
+* Code cleanup, minor fix.
+
 = 0.9.1 - 2015-02-27 =
 * Resolved Ticket# [1](https://wordpress.org/support/topic/theme-1-not-show-preview)
 * Bug fixed in theme #6 & #7.
@@ -85,8 +92,8 @@ Go to Relatify-> Settings Page, select template you like.
 
 == Upgrade Notice ==
 
-= 0.9.1 =
-* 4 bug fix, must update.
+= 0.9.2 =
+* Major update, bug fix, more control for user. Must update.
 
 
 == Donation ==

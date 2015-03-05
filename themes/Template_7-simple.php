@@ -14,7 +14,7 @@
                 <li>
                     <% if(item.image != "") { %>
                     <div class="rel_thumb">
-                        <img src="<%= item.image %>" />
+                        <img src="<%= item.image %>" style="<% if(item.width != ""){ %>width:<%= item.width %>px; <% } %><% if(item.height != ""){ %>height:<%= item.height %>px;<% } %>" />
                     </div>
                     <% } %>
                     <div class="rel_content">
@@ -29,10 +29,8 @@
         </div>
     </div>
 </script>
-
 <!-- Create your target -->
 <div id="relatify_output_target"></div>
-
 <style>
     .full_box{
         margin: 20px 0 35px;
@@ -59,4 +57,8 @@
     .content-list-wrapper p{
         margin-bottom: 10px;
     }
+    .single_relatified_post_title .single_relatified_excerpt{
+        font-weight: normal !important;
+    }
+
 </style>

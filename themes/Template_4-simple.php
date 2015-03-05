@@ -21,25 +21,19 @@
         </div>
     </div>
 </script>
-
 <!-- Create your target -->
 <div id="relatify_output_target"></div>
-
 <style>
     .single_relatified_item {
         float: left;
         width: 24%;
         margin-right: 5px;
-    margin-bottom: 4px;
+        margin-bottom: 4px;
     }
-
     .single_relatified_item:first-child {
-
     }
-
     .single_relatified_item img {
     }
-
     .single_relatified_post_title {
         padding: 5px;
         position: relative;
@@ -47,19 +41,18 @@
         height: 45px;
         margin-top: 2px;
     }
-
     .single_relatified_post_title p {
         color: #535353;
         font-size: 12px;
         font-weight: bold;
+        height: 35px;
         line-height: 1.4;
         margin-bottom: 0 !important;
-        padding-left: 5px;
+        overflow: hidden;
+        padding-left: 3px;
     }
-
     .full_box {
     }
-
     .related-content-title {
         margin-bottom: 10px;
     }

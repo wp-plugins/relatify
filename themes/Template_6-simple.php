@@ -14,7 +14,7 @@
                 <div class="single_relatified_item">
                     <a href="<%= item.permalink %>">
                         <% if(item.image != "") { %>
-                        <img src="<%= item.image %>" />
+                        <img src="<%= item.image %>" style="<% if(item.width != ""){ %>width:<%= item.width %>px; <% } %><% if(item.height != ""){ %>height:<%= item.height %>px;<% } %>" />
                         <% } %>
                         <div class="single_relatified_post_title">
                             <p><%= item.post_title %></p>
@@ -29,10 +29,8 @@
         </div>
     </div>
 </script>
-
 <!-- Create your target -->
 <div id="relatify_output_target"></div>
-
 <style>
     .full_box{
         margin: 20px 0 35px;
@@ -42,9 +40,7 @@
         float: left;
         width: 45%;
         margin: 0 2% 20px;
-
     }
-
     .single_relatified_item img {
         width: 100%;
         border-radius: 0;
@@ -54,7 +50,6 @@
         -o-transition: all 1s ease; /* Opera */
         transition: all 1s ease;
     }
-
     .single_relatified_item:hover img {
         -webkit-transform:scale(1.25) rotate(-20deg); /* Safari and Chrome */
         -moz-transform:scale(1.25) rotate(-20deg); /* Firefox */
@@ -62,17 +57,14 @@
         -o-transform:scale(1.25) rotate(-20deg); /* Opera */
         transform:scale(1.25) rotate(-20deg);
     }
-
     .single_relatified_item a{
         display: block;
     }
-
     .single_relatified_item{
         position: relative;
         height: 285px;
         overflow: hidden;
     }
-
     .single_relatified_post_title {
         padding: 3px;
         position: absolute;
@@ -83,10 +75,8 @@
         box-sizing: border-box;
         color: #fff;
     }
-
     .full_box {
     }
-
     .single_relatified_post_title p {
         color: #fff;
         font-weight: bold;
@@ -96,7 +86,6 @@
         padding: 5px;
         text-decoration: underline;
     }
-
     .single_relatified_post_title .single_relatified_excerpt {
         color: #fff;
         font-weight: bold;
@@ -105,26 +94,21 @@
         margin-bottom: 0 !important;
         padding: 5px;
     }
-
     .related-content-title {
         margin-bottom: 10px;
     }
 </style>
-
 <script type="text/javascript">
-    jQuery(function($){
-
-        $(document).on('mouseenter', '.single_relatified_item', function() {
+    jQuery(function ($) {
+        $(document).on('mouseenter', '.single_relatified_item', function () {
             $(this).find('.single_relatified_post_title').animate({
                 bottom: '0'
             }, 300);
         });
-
-        $(document).on('mouseleave', '.single_relatified_item', function() {
+        $(document).on('mouseleave', '.single_relatified_item', function () {
             $(this).find('.single_relatified_post_title').animate({
                 bottom: '-60px'
             }, 300);
         });
-
     });
 </script>

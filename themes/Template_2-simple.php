@@ -13,9 +13,9 @@
             <div class="single_relatified_item">
                 <a href="<%= item.permalink %>">
                     <% if(item.image != "") { %>
-                    <img src="<%= item.image %>" />
-                    <% } %>
-                    <div class="single_relatified_post_title">
+                    <img src="<%= item.image %>" style="<% if(item.width != ""){ %>width:<%= item.width %>px; <% } %><% if(item.height != ""){ %>height:<%= item.height %>px;<% } %>" />
+                         <% } %>
+                         <div class="single_relatified_post_title">
                         <p><%= item.post_title %></p>
                     </div>
                 </a>
@@ -24,50 +24,42 @@
         </div>
     </div>
 </script>
-
 <!-- Create your target -->
 <div id="relatify_output_target"></div>
-
 <style>
     .single_relatified_item {
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
         float: left;
-        width: 23.5%;
-        margin: 0 0.4%;
         position: relative;
+        width: 23.5%;
     }
-
     .single_relatified_item img {
         width: 100%;
         border-radius: 0;
     }
-
     .single_relatified_item:first-child {
-
     }
-
     .single_relatified_post_title {
-        padding: 3px;
-        position: absolute;
-        bottom: 7px;
-        background-color:rgba(63,63,63,0.7);
-        height: 45px;
-        width: 100%;
+        background-color: rgba(63, 63, 63, 0.7);
+        bottom: 0;
         box-sizing: border-box;
         color: #fff;
+        height: 45px;
+        position: absolute;
+        width: 100%;
     }
-
     .full_box {
     }
-
     .single_relatified_post_title p {
         color: #fff;
-        font-weight: bold;
         font-size: 12px !important;
+        height: 40px;
         line-height: 1.4;
         margin-bottom: 0 !important;
+        overflow: hidden;
         padding: 5px;
     }
-
     .related-content-title {
         margin-bottom: 10px;
     }
