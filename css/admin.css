@@ -8,3 +8,70 @@ and open the template in the editor.
     Author     : tapan
 */
 
+.relatify_sidebar{
+    padding-top: 155px;
+}
+
+ul.rel_social{
+    margin: 0;
+    padding: 0;
+}
+
+.rel_social li{
+    padding: 0;
+    float: left;
+    margin: 0 14px;
+}
+
+.inside .rel_social{
+    overflow: hidden;
+}
+
+.rel_social li a{
+    display: block;
+    width: 35px;
+    height: 35px;
+    text-indent: -9999px;
+    background-image: url(../images/social.png);
+}
+
+.rel_social li a.fb{
+    background-position: -225px -53px;
+}
+
+.rel_social li a.fb:hover{
+    background-position: -225px -126px;
+}
+
+.rel_social li a.twt{
+    background-position: -338px -53px;
+}
+
+.rel_social li a.twt:hover{
+    background-position: -338px -126px;
+}
+
+.rel_social li a.gplus{
+    background-position: -166px -53px;
+}
+
+.rel_social li a.gplus:hover{
+    background-position: -166px -128px;
+}
+
+.rel_social li a.mail{
+    background-position: -53px -53px;
+}
+
+.rel_social li a.mail:hover{
+    background-position: -53px -128px;
+}
+
+.ex_cat, .ex_tag{
+    width: 45%;
+    display: inline-block;
+}
+
+.all_items{
+    display: none;
+}

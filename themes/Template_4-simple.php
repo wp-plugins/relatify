@@ -19,6 +19,11 @@
             </div>
             <% }); %>
         </div>
+        <% if( items.love == 1 ) { %>
+        <div class="relatify_love">
+            <p>Related contents by <a href="<%= items.love_url %>" target="_blank">Relatify</a></p>
+        </div>
+        <% } %>
     </div>
 </script>
 <!-- Create your target -->

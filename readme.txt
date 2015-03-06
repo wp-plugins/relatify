@@ -1,10 +1,10 @@
 === Related Posts By Relatify ===
-Contributors: Asif2BD, tapan29bd, rupok
-Donate link: http://relatify.co/
+Contributors: Asif2BD, Relatify, tapan29bd, rupok
+Donate link: http://relatify.co/go/free
 Tags: related content, wordpress releated, related posts, more like this, related contents, nrelate, related widget, yarpp, simple related
 Requires at least: 3.8.1
 Tested up to: 4.1.1
-Stable tag: 0.9.2
+Stable tag: 0.9.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,6 +18,9 @@ The best & smartest related contents/posts plugin for WordPress. The only Relate
 
 **Features:**
 
+*  **New** Ability to control & exclude Categories
+*  **New** Ability to control & exclude tags
+*  **New** Design update for Option Page
 *  Smartest related results
 *  Modern design
 *  Full control how it looks in your site
@@ -28,8 +31,8 @@ The best & smartest related contents/posts plugin for WordPress. The only Relate
 *  Tons of free design and more coming every week
 *  Prompt support
 *  Smart Mouse Hover effects available in design
-*   **New** Dynamic image size control
-*   **New** Templates Update.
+*  Dynamic image size control
+*  Templates Update.
 
 
 == Installation ==
@@ -75,6 +78,12 @@ Go to Relatify-> Settings Page, select template you like.
 
 == Changelog ==
 
+= 0.9.3 - 2015-03-06 =
+* Ability to exclude Tags & Category
+* Better Option Page design
+* Minor bug fix
+* Templates Update.
+
 = 0.9.2 - 2015-03-05 =
 * Dynamic Image size
 * Templates Update
@@ -92,12 +101,12 @@ Go to Relatify-> Settings Page, select template you like.
 
 == Upgrade Notice ==
 
-= 0.9.2 =
-* Major update, bug fix, more control for user. Must update.
+= 0.9.3 =
+* More control on tags & categiry, major update, bug fix. Must update.
 
 
 == Donation ==
 
 You may buy the premium templates to support the development.
 
-http://relatify.co/
+http://relatify.co/go/free
