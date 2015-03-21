@@ -11,9 +11,9 @@
         <div class="content-list-wrapper">
             <ul>
                 <% _.each(items.posts,function(item,key,list){ %>
-                <li>
+                <li class="single_related_item">
                     <% if(item.image != "") { %>
-                    <div class="rel_thumb">
+                    <div class="rel_thumb" style="<% if(item.width != ""){ %>width:<%= item.width %>px; <% } %>">
                         <img src="<%= item.image %>" style="<% if(item.width != ""){ %>width:<%= item.width %>px; <% } %><% if(item.height != ""){ %>height:<%= item.height %>px;<% } %>" />
                     </div>
                     <% } %>
@@ -42,12 +42,14 @@
         overflow: hidden;
     }
     .rel_thumb{
-        width: 25%;
         float: left;
+        padding-right: 10px;
     }
     .rel_content{
-        float: right;
-        width: 72%;
+    }
+    .rel_content a {
+  	border-bottom: 0 none !important;
+    text-decoration: none !important;
     }
     .content-list-wrapper li{
         overflow: hidden;
@@ -65,5 +67,26 @@
     .single_relatified_post_title .single_relatified_excerpt{
         font-weight: normal !important;
     }
+    .single_related_item{
+	border-bottom: 1px solid #d7d7d7;
+  	padding-top: 10px;
+    }
+    .single_relatified_item > a {
+        border-bottom: 0 none !important;
+        text-decoration: none !important;
+    }
 
+    .single_related_item:first-child {
+  	border-top: 1px solid #d7d7d7;
+  	padding-top: 10px;
+	margin-top: 20px;
+    padding-bottom: 10px;
+    }
+    .relatify_love {
+  	float: right;
+  	font-size: 12px;
+    }
+    .relatify_love a {
+  	border-bottom: 0 none;
+    }
 </style>

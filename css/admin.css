@@ -9,7 +9,7 @@ and open the template in the editor.
 */
 
 .relatify_sidebar{
-    padding-top: 155px;
+    padding-top: 65px;
 }
 
 ul.rel_social{
@@ -74,4 +74,192 @@ ul.rel_social{
 
 .all_items{
     display: none;
+}
+
+.theme_demo {
+  border: 1px solid #d7d7d7;
+}
+
+.relatify_form select {
+    height: 35px;
+}
+
+.relatify_form input[type="text"], select {
+    background-color: #ffffff;
+    border: 2px solid #c9c9c9 !important;
+    border-radius: 3px;
+    box-shadow: none;
+
+}
+
+.relatify_form input[type="text"]:focus, {
+    box-shadow: none;
+}
+
+.relatify_form input[type="email"] {
+    background-color: #ffffff;
+    border: 2px solid #c9c9c9 !important;
+    border-radius: 3px;
+    box-shadow: none;
+
+}
+
+.relatify_form input[type="email"]:focus, {
+    box-shadow: none;
+}
+
+.relatify_form .button {
+  background-color: #e0e0e0;
+  border: 0 none;
+  border-radius: 3px;
+  color: #484848;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  height: 32px;
+  line-height: 32px;
+  margin-right: 18px;
+  overflow: hidden;
+  padding: 0 18px;
+  text-align: center;
+  text-transform: capitalize;
+  transition: background-color 0.23s ease-in-out 0s;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.relatify_form .button:hover {
+    background-color: #d3d3d3;
+    color: 484848;
+    box-shadow: none;
+    border: 0 none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 18px;
+    overflow: hidden;
+    padding: 0 18px;
+    text-align: center;
+    text-transform: capitalize;
+    transition: background-color 0.23s ease-in-out 0s;
+    vertical-align: middle;
+    white-space: nowrap;    
+}
+
+.relatify_form .button:focus {
+    background-color: #d3d3d3;
+    color: 484848;
+    box-shadow: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 18px;
+    overflow: hidden;
+    padding: 0 18px;
+    text-align: center;
+    text-transform: capitalize;
+    transition: background-color 0.23s ease-in-out 0s;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.relatify_form .button-long {
+    width: 50% !important;
+}
+
+.relatify_form .button-semi-long {
+    width: 25% !important;
+}
+
+
+.relatify_form .button-primary {
+  background-color: #2ea2cc;
+  border: 0 none;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  height: 32px;
+  line-height: 32px;
+  margin-right: 18px;
+  overflow: hidden;
+  padding: 0 18px;
+  text-align: center;
+  text-transform: capitalize;
+  transition: background-color 0.23s ease-in-out 0s;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.relatify_form .button-primary:hover {
+    background-color: #0080b0;
+    color: #ffffff;
+    box-shadow: none;
+    border: 0 none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 18px;
+    overflow: hidden;
+    padding: 0 18px;
+    text-align: center;
+    text-transform: capitalize;
+    transition: background-color 0.23s ease-in-out 0s;
+    vertical-align: middle;
+    white-space: nowrap;    
+}
+
+.relatify_form .button-primary:focus {
+    background-color: #0080b0;
+    color: #ffffff;
+    box-shadow: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 18px;
+    overflow: hidden;
+    padding: 0 18px;
+    text-align: center;
+    text-transform: capitalize;
+    transition: background-color 0.23s ease-in-out 0s;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+#mc_embed_signup .button {
+    font-size: 13px !important;
+}
+
+#mc_embed_signup form {
+    padding: 0 !important;
+}
+
+#mc_embed_signup .mc-field-group {
+    width: 100% !important;
+}
+
+#mc_embed_signup .indicates-required {
+    margin-right: 0% !important;
+}
+
+.sidebar_promo {
+  width: 100%;
+  padding-top: 5px;
 }

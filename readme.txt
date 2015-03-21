@@ -4,7 +4,7 @@ Donate link: http://relatify.co/go/free
 Tags: related content, wordpress releated, related posts, more like this, related contents, nrelate, related widget, yarpp, simple related
 Requires at least: 3.8.1
 Tested up to: 4.1.1
-Stable tag: 0.9.3
+Stable tag: 0.9.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,6 +18,8 @@ The best & smartest related contents/posts plugin for WordPress. The only Relate
 
 **Features:**
 
+*  **New** Pro Templates **Elegant Pro** & **Modern Pro** now available
+*  **New** Brand new interface, and lots of other feature.
 *  **New** Ability to control & exclude Categories
 *  **New** Ability to control & exclude tags
 *  **New** Design update for Option Page
@@ -62,6 +64,11 @@ This section describes how to install the plugin and get it working.
 
 Go to Relatify-> Settings Page, select template you like.
  
+= So, you have pro design? =
+
+Go to Relatify-> Settings Page, Check the bottom Premium Themes demo, clicking the image will take you to our buy page.
+ 
+ 
  
 == Screenshots ==
 
@@ -77,6 +84,14 @@ Go to Relatify-> Settings Page, select template you like.
 
 
 == Changelog ==
+
+= 0.9.5 - 2015-03-21 =
+* Redesign themeing engine
+* Pro design shape up
+* All existing bug fixed.
+
+= 0.9.4 - 2015-03-13 =
+* {Internal] Bug fix.
 
 = 0.9.3 - 2015-03-06 =
 * Ability to exclude Tags & Category
@@ -101,8 +116,8 @@ Go to Relatify-> Settings Page, select template you like.
 
 == Upgrade Notice ==
 
-= 0.9.3 =
-* More control on tags & categiry, major update, bug fix. Must update.
+= 0.9.5 =
+* Must update. More control on tags & categiry, major update, bug fix. 
 
 
 == Donation ==

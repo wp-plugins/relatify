@@ -4,11 +4,11 @@
  */
 ?>
 <script type="text/html" id='relatify_output'>
-    <div  class="related-content" >
+    <div  class="full_box" >
         <div class="related-content-title" >
             <%= items.title %>
         </div>
-        <div class="full_box">
+        <div class="content-list-wrapper">
             <% _.each(items.posts,function(item,key,list){ %>
             <div class="single_relatified_item">
                 <div class="single_relatified_post_title">
@@ -29,23 +29,31 @@
 <!-- Create your target -->
 <div id="relatify_output_target"></div>
 <style>
-    .single_relatified_item {
-        float: left;
-        margin-bottom: 3px;
-        margin-right: 5px;
-        width: 24%;
-    }
+.single_relatified_item {
+  float: left;
+  margin-bottom: 3px;
+  width: 25%;
+}
     .single_relatified_item:first-child {
     }
+    .single_relatified_item > a {
+        border-bottom: 0 none !important;
+        text-decoration: none !important;
+    }    
     .single_relatified_item img {
     }
-    .single_relatified_post_title {
-        padding: 5px;
-        position: relative;
-        background: none repeat scroll 0 0 #e14938;
-        height: 45px;
-        margin-top: 2px;
-    }
+.single_relatified_post_title > a {
+  border-bottom: 0 none !important;
+  text-decoration: none !important;
+}
+.single_relatified_post_title {
+  background: none repeat scroll 0 0 #e14938;
+  height: 35px;
+  margin-right: 1px;
+  margin-top: 2px;
+  padding: 5px;
+  position: relative;
+}
     .single_relatified_post_title p {
         color: #ffffff;
         font-size: 12px;
@@ -55,8 +63,18 @@
         overflow: hidden;
         padding-left: 3px;
     }
-    .full_box {
+    .content-list-wrapper {
+        float: left;
+        width: 100%;
     }
+    .relatify_love {
+        float: right;
+        font-size: 12px;
+        padding-top: 5px;
+    }
+  .full_box {
+    overflow: auto;
+  }      
     .related-content-title {
         margin-bottom: 10px;
     }

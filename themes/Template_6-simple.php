@@ -9,23 +9,23 @@
             <%= items.title %>
         </div>
         <div class="content-list-wrapper">
-            <% _.each(items.posts,function(item,key,list){ %>
-            <div class="single_rel_wrap">
-                <div class="single_relatified_item">
-                    <a href="<%= item.permalink %>">
-                        <% if(item.image != "") { %>
+            <ul>
+                <% _.each(items.posts,function(item,key,list){ %>
+                <li class="single_related_item">
+                    <% if(item.image != "") { %>
+                    <div class="rel_thumb" style="<% if(item.width != ""){ %>width:<%= item.width %>px; <% } %>">
                         <img src="<%= item.image %>" style="<% if(item.width != ""){ %>width:<%= item.width %>px; <% } %><% if(item.height != ""){ %>height:<%= item.height %>px;<% } %>" />
-                        <% } %>
-                        <div class="single_relatified_post_title">
-                            <p><%= item.post_title %></p>
-                            <div class="single_relatified_excerpt">
-                                <%= item.post_content.substr(0, 100).replace( /<.*?>/g, '' ) %> ...
-                            </div>
+                    </div>
+                    <% } %>
+                    <div class="rel_content">
+                        <p><b><a href="<%= item.permalink %>"><%= item.post_title %></a></b></p>
+                        <div class="rel_excerpt">
+                            <%= item.post_content.substr(0, 250).replace( /<.*?>/g, '' ) %> ...
                         </div>
-                    </a>
-                </div>
-            </div>
-            <% }); %>
+                    </div>
+                </li>
+                <% }); %>
+            </ul>
         </div>
         <% if( items.love == 1 ) { %>
         <div class="relatify_love">
@@ -41,79 +41,52 @@
         margin: 20px 0 35px;
         overflow: hidden;
     }
-    .single_rel_wrap {
+    .rel_thumb{
         float: left;
-        width: 45%;
-        margin: 0 2% 20px;
+        padding-right: 10px;
     }
-    .single_relatified_item img {
-        width: 100%;
-        border-radius: 0;
-        -webkit-transition: all 1s ease; /* Safari and Chrome */
-        -moz-transition: all 1s ease; /* Firefox */
-        -ms-transition: all 1s ease; /* IE 9 */
-        -o-transition: all 1s ease; /* Opera */
-        transition: all 1s ease;
+    .rel_content{
     }
-    .single_relatified_item:hover img {
-        -webkit-transform:scale(1.25) rotate(-20deg); /* Safari and Chrome */
-        -moz-transform:scale(1.25) rotate(-20deg); /* Firefox */
-        -ms-transform:scale(1.25) rotate(-20deg); /* IE 9 */
-        -o-transform:scale(1.25) rotate(-20deg); /* Opera */
-        transform:scale(1.25) rotate(-20deg);
+    .rel_content a {
+  	border-bottom: 0 none !important;
+    text-decoration: none !important;
     }
-    .single_relatified_item a{
-        display: block;
-    }
-    .single_relatified_item{
-        position: relative;
-        height: 285px;
+    .content-list-wrapper li{
         overflow: hidden;
+        margin: 0 0 15px;
+        padding: 0;
     }
-    .single_relatified_post_title {
-        padding: 3px;
-        position: absolute;
-        bottom: -60px;
-        background-color:rgba(63,63,63,0.7);
-        height: 105px;
-        width: 100%;
-        box-sizing: border-box;
-        color: #fff;
+    .content-list-wrapper ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
     }
-    .full_box {
-    }
-    .single_relatified_post_title p {
-        color: #fff;
-        font-weight: bold;
-        font-size: 12px !important;
-        line-height: 1.4;
-        margin-bottom: 10px !important;
-        padding: 5px;
-        text-decoration: underline;
-    }
-    .single_relatified_post_title .single_relatified_excerpt {
-        color: #fff;
-        font-weight: bold;
-        font-size: 12px !important;
-        line-height: 1.4;
-        margin-bottom: 0 !important;
-        padding: 5px;
-    }
-    .related-content-title {
+    .content-list-wrapper p{
         margin-bottom: 10px;
     }
+    .single_relatified_post_title .single_relatified_excerpt{
+        font-weight: normal !important;
+    }
+    .single_related_item{
+	border-bottom: 1px solid #d7d7d7;
+  	padding-top: 10px;
+    }
+    .single_relatified_item > a {
+        border-bottom: 0 none !important;
+        text-decoration: none !important;
+    }
+
+    .single_related_item:first-child {
+  	border-top: 1px solid #d7d7d7;
+  	padding-top: 10px;
+	margin-top: 20px;
+    padding-bottom: 10px;
+    }
+    .relatify_love {
+  	float: right;
+  	font-size: 12px;
+    }
+    .relatify_love a {
+  	border-bottom: 0 none;
+    }
 </style>
-<script type="text/javascript">
-    jQuery(function ($) {
-        $(document).on('mouseenter', '.single_relatified_item', function () {
-            $(this).find('.single_relatified_post_title').animate({
-                bottom: '0'
-            }, 300);
-        });
-        $(document).on('mouseleave', '.single_relatified_item', function () {
-            $(this).find('.single_relatified_post_title').animate({
-                bottom: '-60px'
-            }, 300);
-        });
-    });
-</script>
